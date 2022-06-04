@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemNewBoarding"
+        android:title="New Boarding"
+        android:icon="@drawable/adminhomeicon"/>
+
+    <item
+        android:id="@+id/itemUserRequest"
+        android:title="New User Request"
+        android:icon="@drawable/adminnewuser"/>
+
+    <item
+        android:id="@+id/itemAllUser"
+        android:title="All Users"
+        android:icon="@drawable/allusers"/>
+
+</menu>

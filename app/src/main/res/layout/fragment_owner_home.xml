@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefa"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OwnerHomeFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_marginHorizontal="10dp"
+      android:layout_gravity="center_horizontal">
+
+      <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+       android:focusable="true"
+       android:checkable="true"
+       android:elevation="10dp"
+       android:layout_marginTop="15dp"
+       app:contentPadding="12dp">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <TextView
+                  android:id="@+id/tvOwnerName"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Name of the accommodation owner"
+                  android:textAppearance="?attr/textAppearanceHeadline6"
+                  />
+              <TextView
+                  android:id="@+id/tvOwnerEmail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:text="Accommodation owner"
+                  android:textAppearance="?attr/textAppearanceBody2"
+                  android:textColor="@color/colorAppPrimary"
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="3dp"
+                  android:text="Accommodation owner"
+                  android:textStyle="italic|bold"
+                  android:textAppearance="?attr/textAppearanceBody2"
+                  android:textColor="@color/colorAppPrimary"
+                  />
+          </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Your activities"
+                  android:textAppearance="?attr/textAppearanceBody2"
+                  android:layout_marginHorizontal="10dp"
+                  android:textSize="12sp"
+                  android:textStyle="bold"
+                  android:textColor="@color/colorAppPrimary"
+                  />
+
+              <!--  Card row 1  -->
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:layout_marginVertical="10dp"
+                 >
+
+                <com.google.android.material.card.MaterialCardView
+                  android:id="@+id/cardActivePost"
+                  android:layout_width="160dp"
+                  android:layout_height="100dp"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:checkable="true"
+                  android:elevation="1dp"
+                  android:layout_marginHorizontal="10dp"
+                  app:contentPadding="12dp">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Active"
+                          android:textSize="16sp"
+                          android:textAppearance="?attr/textAppearanceHeadline6"
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="8dp"
+                          android:text="active posts"
+                          android:textSize="13sp"
+                          android:textAppearance="?attr/textAppearanceBody2"
+                          android:textColor="@color/colorAppPrimary"
+                          />
+                  </LinearLayout>
+              </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                  android:id="@+id/cardPendingPost"
+                  android:layout_width="160dp"
+                  android:layout_height="100dp"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:checkable="true"
+                  android:elevation="1dp"
+                  android:layout_marginHorizontal="10dp"
+                  app:contentPadding="12dp"
+                 >
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Pending approval"
+                          android:textSize="16sp"
+                          android:textAppearance="?attr/textAppearanceHeadline6"
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="8dp"
+                          android:text="pending posts"
+                          android:textSize="13sp"
+                          android:textAppearance="?attr/textAppearanceBody2"
+                          android:textColor="@color/colorAppPrimary"
+                          />
+                  </LinearLayout>
+              </com.google.android.material.card.MaterialCardView>
+
+              </LinearLayout>
+              <!--  Card row 1 End -->
+
+              <!--  Card row 2  -->
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:layout_marginVertical="10dp"
+                  >
+
+                  <com.google.android.material.card.MaterialCardView
+                      android:id="@+id/cardDeniedPost"
+                      android:layout_width="160dp"
+                      android:layout_height="100dp"
+                      android:clickable="true"
+                      android:focusable="true"
+                      android:checkable="true"
+                      android:elevation="1dp"
+                      android:layout_marginHorizontal="10dp"
+                      app:contentPadding="12dp">
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Reject"
+                              android:textSize="16sp"
+                              android:textAppearance="?attr/textAppearanceHeadline6"
+                              />
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="8dp"
+                              android:text="rejected post"
+                              android:textSize="13sp"
+                              android:textAppearance="?attr/textAppearanceBody2"
+                              android:textColor="@color/colorAppPrimary"
+                              />
+                      </LinearLayout>
+                  </com.google.android.material.card.MaterialCardView>
+
+                  <com.google.android.material.card.MaterialCardView
+                      android:id="@+id/card_4"
+                      android:layout_width="160dp"
+                      android:layout_height="100dp"
+                      android:clickable="true"
+                      android:focusable="true"
+                      android:checkable="true"
+                      android:elevation="1dp"
+                      android:layout_marginHorizontal="10dp"
+                      app:contentPadding="12dp"
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Pause"
+                              android:textSize="16sp"
+                              android:textAppearance="?attr/textAppearanceHeadline6"
+                              />
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="8dp"
+                              android:text="pause posts"
+                              android:textSize="13sp"
+                              android:textAppearance="?attr/textAppearanceBody2"
+                              android:textColor="@color/colorAppPrimary"
+                              />
+                      </LinearLayout>
+                  </com.google.android.material.card.MaterialCardView>
+
+              </LinearLayout>
+              <!--  Card row 2 End -->
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp"
+                  android:text="Publish post"
+                  android:textAppearance="?attr/textAppearanceBody2"
+                  android:layout_marginHorizontal="10dp"
+                  android:textSize="12sp"
+                  android:textStyle="bold"
+                  android:textColor="@color/colorAppPrimary"
+                  />
+
+              <com.google.android.material.card.MaterialCardView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:checkable="true"
+                  android:elevation="1dp"
+                  android:layout_marginHorizontal="10dp"
+                  android:layout_marginTop="10dp"
+                  app:contentPadding="12dp">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/locationIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:scaleType="centerCrop"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
+                            android:src="@drawable/ic_baseline_create_24" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="Create Post"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAppPrimary"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                    </LinearLayout>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="1dp"
+                          android:layout_marginLeft="30dp"
+                          android:text="1. Create Your post content. \n\n 2.Add Images \n\n3. Make your payment (Rs.500). \n\n4. Waiting for admin approval. \n\n5.Post will publish after approval."
+                          android:textStyle="italic"
+                          android:textAppearance="?attr/textAppearanceBody2"
+                          android:textColor="@color/cardview_dark_background"
+                          />
+
+                      <Button
+                          android:id="@+id/btnStartCreation"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginTop="5dp"
+                          android:text="Start Creation"
+                          android:textColor="@color/colorWhite"
+                          android:backgroundTint="@color/colorAppPrimary"
+                          />
+                  </LinearLayout>
+              </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+  </LinearLayout>
+
+</FrameLayout>

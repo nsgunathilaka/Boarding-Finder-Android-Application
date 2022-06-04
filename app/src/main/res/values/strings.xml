@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Boarding Finder</string>
+    <string name="login_email_hint">someone@gmail.com</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_Repassword_hint">Confirm Password</string>
+    <string name="address_hint">Address</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a Member? Login</string>
+    <string name="error_mail_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Doest Not Match</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="inbox">Inbox</string>
+    <string name="notification">Notification</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="other">Other</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string-array name="Spinner_items">
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Badulla</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Hambanthota</item>
+        <item>Jaffna</item>
+        <item>Kaluthara</item>
+        <item>Kandy</item>
+        <item>Kegalle</item>
+        <item>Kilinochchi</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Moneragala</item>
+        <item>Mullaitivu</item>
+        <item>Nuwara Eliya</item>
+        <item>Polonnaruwa</item>
+        <item>Puttalam</item>
+        <item>Rathnapura</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="apiBaseUrl">http:192.168.1.101:8081/</string>
+<!--    <string name="apiBaseUrl">http:192.168.1.101:8081/</string>-->
+</resources>
